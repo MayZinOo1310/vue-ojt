@@ -40,10 +40,10 @@
   </section>
 </template>
 
-<script src="<https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
 <script>
 import TaskItem from './TaskItem.vue'
-export default {
+export default ('task-list',{
   name: 'task-list',
   components: {
     TaskItem
@@ -90,5 +90,5 @@ export default {
       return task.completed;
     }
   }
-};
+});
 </script>
