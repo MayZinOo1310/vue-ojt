@@ -34,7 +34,7 @@
                      @remove="removeTask(index)"
                      @complete="completeTask(task)"
                      :task="task"
-                     :key="task"
+                     :key="task.title"
           ></task-item>
       </transition-group>
   </section>
@@ -44,7 +44,8 @@
 <script>
 import TaskItem from './TaskItem.vue'
 export default ('task-list',{
-  name: 'task-list',
+  name: 'TaskList',
+  template: '#task-list',
   components: {
     TaskItem
   },

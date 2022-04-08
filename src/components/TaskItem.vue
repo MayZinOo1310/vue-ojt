@@ -16,7 +16,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
 <script>
 export default {
-  name: 'task-item',
+  name: 'TaskItem',
+  template: '#task-item',
   props: ['task'],
   computed: {
     className() {
